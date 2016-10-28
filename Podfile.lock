@@ -1,0 +1,18 @@
+PODS:
+  - Freddy (2.1.0)
+  - OAStackView (1.0.1)
+  - SnapKit (0.15.0)
+
+DEPENDENCIES:
+  - Freddy
+  - OAStackView
+  - SnapKit (~> 0.15.0)
+
+SPEC CHECKSUMS:
+  Freddy: bbdca013977db29638b24baf6572ce94452bec29
+  OAStackView: 95e7cb79cbea25c2342f496a44bdbe8bd4c8d510
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
+
+PODFILE CHECKSUM: 7aca7e0d13870c6b035b626df3ca3e4bb8530459
+
+COCOAPODS: 1.0.1

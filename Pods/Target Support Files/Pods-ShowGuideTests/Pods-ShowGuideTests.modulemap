@@ -1,0 +1,6 @@
+framework module Pods_ShowGuideTests {
+  umbrella header "Pods-ShowGuideTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

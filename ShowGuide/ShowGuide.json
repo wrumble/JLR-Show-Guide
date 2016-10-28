@@ -1,0 +1,28 @@
+{
+   "ShowGuideItems":[
+                     {
+                     "name":"MAP Of THE STAND",
+                     "text":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+                     "iconFileName":"MapOfStandIcon",
+                     "backgroundImageFileName":"MapOfStandBGImage.jpg",
+                     "chevronImageFileName":"chevronIcon.png",
+                     "url":"app:"
+                     },
+                      {
+                      "name":"WHAT'S ON!",
+                      "text":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+                      "iconFileName":"WhatsOnIcon.png",
+                      "backgroundImageFileName":"WhatsOnBGImage.jpg",
+                      "chevronImageFileName":"chevronIcon.png",
+                      "url":"app:"
+                      },
+                      {
+                      "name":"INNOVATION LAB",
+                      "text":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+                      "iconFileName":"InnovationLabIcon.png",
+                      "backgroundImageFileName":"InnovationLabBGImage.jpg",
+                      "chevronImageFileName":"chevronIcon.png",
+                      "url":"app:"
+                      }
+                     ]
+}

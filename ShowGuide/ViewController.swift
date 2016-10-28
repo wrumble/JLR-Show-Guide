@@ -7,19 +7,42 @@
 //
 
 import UIKit
+import OAStackView
+import SnapKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+public class ShowGuideViewController: UIViewController {
+    
+    lazy var stackView: OAStackView = {
+        let stackView = OAStackView()
+        stackView.axis = .Vertical
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.distribution = .FillEqually
+        return stackView
+    }()
+    
+    public override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        ShowGuideItem.all { showGuideItems in
+            showGuideItems.forEach(self.viewForShowGuideItem)
+        }
+        
+        view.addSubview(stackView)
+        
+        stackView.snp_makeConstraints { make in
+            make.edges.equalTo(view.snp_edges)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private func viewForShowGuideItem(showGuideItem: ShowGuideItem) {
+        let view = ShowGuideItemView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.bind(showGuideItem)
+        view.tapped = { _ in
+            print("Open \(showGuideItem.url)")
+        }
+        stackView.addArrangedSubview(view)
     }
-
-
+    
+    
 }
-

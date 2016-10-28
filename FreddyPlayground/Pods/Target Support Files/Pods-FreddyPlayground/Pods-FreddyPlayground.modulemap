@@ -1,0 +1,6 @@
+framework module Pods_FreddyPlayground {
+  umbrella header "Pods-FreddyPlayground-umbrella.h"
+
+  export *
+  module * { export * }
+}
